@@ -1,3 +1,6 @@
+'use strict'
+
+//prototype style
 function Robot() {
 
 }
