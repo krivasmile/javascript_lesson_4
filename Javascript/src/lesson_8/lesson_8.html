@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 8</title>
+</head>
+
+<style>
+    .invisible{
+        visibility: hidden;
+    }
+    .menu ul {
+        margin: 0;
+        list-style: none;
+        padding-left: 20px;
+        display: none;
+    }
+
+    .menu .title {
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .menu .title::before {
+        content: '▶ ';
+        font-size: 80%;
+        color: green;
+    }
+
+    .menu.open .title::before {
+        content: '▼ ';
+    }
+
+    .menu.open ul {
+        display: block;
+    }
+</style>
+
+<body>
+    <div id="text">
+        <a href="https://www.pornhub.com/">Do not click, here is porn!</a>
+    </div>
+    <br>
+    <input id="hideBut" type="button" value="Hide!">
+    <hr size="3px" color="black">
+
+    <input id="forHide" type="button" value="Bye bye">
+
+    <hr size="3px" color="black">
+
+    <div class="menu" id="menu">
+    <span class="title">Університет</span>
+    <ul>
+        <li>кафедра ІСМ</li>
+        <li>кафедра ЕСМ</li>
+        <li>кафедра політології</li>
+    </ul>
+    </div>
+
+    <script src="lesson_8.js"></script>
+</body>
+</html>
