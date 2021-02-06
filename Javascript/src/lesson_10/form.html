@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AJAX FORM</title>
+    <style>
+        .error{
+            border-color: red;
+            background-color: pink;
+        }
+        .correct{
+            border-color: black;
+            background-color: #e9f0fe;
+        }
+    </style>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<body>
+<h1>Registration form</h1>
+<form>
+    <label>Last Name</label><br><input type="text" id="lName">
+    <br>
+    <label>First Name</label><br><input type="text" id="fName">
+    <br>
+    <label>Age</label><br><input type="text" id="age">
+    <br>
+    <label>Address</label><br><input type="text" id="address">
+    <br>
+    <br>
+    <input type="button" id="but1" value="Send by Get" onclick="sendDataByGetMethod()">
+    <input type="button" id="but2" value="Send by Post" onclick="sendDataByPostMethod()">
+</form>
+
+<script src="jquery.js"></script>
+
+</body>
+</html>
